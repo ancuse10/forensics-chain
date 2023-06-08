@@ -4,4 +4,4 @@ Welcome to the repository for my Bachelor's Thesis on the design of a Blockchain
 
 In this repository the following can be found:
 Smart Contract written in Solidity to store and retrieve data (certificates and evidences) into the Blockchain
-Scripts written in Python to interact with the provided Smart Contract and to retrieve data from a Raspberry Pi through SSH
+Scripts written in Python to interact with the provided Smart Contract and to retrieve data from a Raspberry Pi through SSH.
