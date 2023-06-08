@@ -1,0 +1,168 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "_message",
+				"type": "string"
+			}
+		],
+		"name": "deviceEvent",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "_message",
+				"type": "string"
+			}
+		],
+		"name": "setHashEvent",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "currentID",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getID",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "certificateId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "cert",
+				"type": "bytes"
+			}
+		],
+		"name": "getLatestEvidence",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "incrementID",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "certificateId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "certificate",
+				"type": "bytes"
+			},
+			{
+				"internalType": "string",
+				"name": "cert_owner",
+				"type": "string"
+			}
+		],
+		"name": "registerCertificate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_filehash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "certificateId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "cert",
+				"type": "bytes"
+			},
+			{
+				"internalType": "string",
+				"name": "cert_owner",
+				"type": "string"
+			}
+		],
+		"name": "storeEvidence",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
